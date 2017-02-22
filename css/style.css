@@ -1,0 +1,202 @@
+h1 {
+  text-align: center;
+  color: white;
+}
+
+div.account-survey .col-centered {
+  float: none;
+  margin: 0 auto;
+}
+div.account-survey .thankyou h4 {
+  font-family: 'Source Sans Pro';
+  font-weight: 500;
+  text-align: center;
+}
+.campus-survey{
+  background: rgba(0, 0, 0, 0.1);
+  color: blue;
+}
+div.account-survey .errors h5 {
+  color: red;
+}
+div.account-survey form {
+  position: fixed;
+  border-radius: 30px;
+  width:21%;
+  top:0;
+  right:0;
+  color: white;
+  background: rgba(50, 50, 50,.5);
+  padding: 20px;
+  max-width: 730px;
+  margin: 40px ;;
+}
+div.account-survey form p {
+  font-family: 'Source Sans Pro';
+  font-weight: 500;
+}
+div.account-survey form .field {
+  display: block;
+}
+div.account-survey form .field.slider {
+  margin: 0 auto 35px;
+  max-width: 410px;
+}
+@media (min-width: 500px) {
+  div.account-survey form .field.slider {
+    margin: 0 auto 15px;
+  }
+}
+div.account-survey form .field.slider label {
+  width: 100px;
+  display: inline;
+  color: #1a3658;
+  
+}
+@media (min-width: 500px) {
+  div.account-survey form .field.slider label {
+    text-align: right;
+  }
+}
+div.account-survey form .field.slider:last-of-type {
+  margin-bottom: 55px;
+}
+div.account-survey form .field.slider .slider-horizontal {
+  width: 100% !important;
+}
+@media (min-width: 500px) {
+  div.account-survey form .field.slider .slider-horizontal {
+    width: 210px !important;
+  }
+}
+div.account-survey form .field label {
+  font-family: 'Source Sans Pro';
+  font-weight: 500;
+  color: #3b3b3b;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-right: 15px;
+}
+div.account-survey form .field .slider-val {
+  font-family: 'Oswald';
+  font-weight: bold;
+  color: #1a3658;
+  font-size: 16px;
+  top: 4px;
+  position: relative;
+}
+@media (min-width: 500px) {
+  div.account-survey form .field .slider-val {
+    padding-left: 15px;
+  }
+}
+div.account-survey form .field .slider-disabled .slider-handle {
+  background-color: #bbbbbb;
+  background-image: -moz-linear-gradient(top, #bbbbbb, #bbbbbb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#bbbbbb), to(#3b3b3b));
+  background-image: -webkit-linear-gradient(top, #bbbbbb, #bbbbbb);
+  background-image: -o-linear-gradient(top, #bbbbbb, #bbbbbb);
+  background-image: linear-gradient(to bottom, #bbbbbb, #bbbbbb);
+}
+div.account-survey form .field .slider-handle {
+  background-color: #3b3b3b;
+  background-image: -moz-linear-gradient(top, #3b3b3b, #3b3b3b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3b3b3b), to(#3b3b3b));
+  background-image: -webkit-linear-gradient(top, #3b3b3b, #3b3b3b);
+  background-image: -o-linear-gradient(top, #3b3b3b, #3b3b3b);
+  background-image: linear-gradient(to bottom, #3b3b3b, #3b3b3b);
+}
+div.account-survey form .field .tooltip {
+  display: none !important;
+}
+div.account-survey form .field .slider-checkbox {
+  padding-left: 40px;
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+}
+div.account-survey form .field .slider-checkbox label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: -3px;
+  left: 14px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.5), 1px 1px 0px rgba(255, 255, 255, 0.4);
+}
+div.account-survey form .field .slider-checkbox label:after {
+  content: '';
+  width: 12px;
+  height: 7px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  border: 3px solid #3b3b3b;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  transform: rotate(-49deg);
+}
+div.account-survey form .field .slider-checkbox label:hover::after {
+  opacity: 0.3;
+}
+div.account-survey form .field .slider-checkbox input {
+  visibility: hidden;
+}
+div.account-survey form .field .slider-checkbox input:checked + label:after {
+  opacity: 1;
+}
+div.account-survey form .field.radio-fields {
+  margin: 50px auto 0;
+  max-width: 460px;
+  overflow: hidden;
+}
+@media (min-width: 670px) {
+  div.account-survey form .field.radio-fields {
+    max-width: 600px;
+  }
+}
+div.account-survey form .field.radio-fields p {
+  text-align: center;
+}
+div.account-survey form .field.radio-fields .radios {
+  padding: 0 30px;
+  float: none;
+  display: block;
+}
+@media (min-width: 670px) {
+  div.account-survey form .field.radio-fields .radios {
+    display: inline-block;
+    float: left;
+  }
+}
+div.account-survey form .field.radio-fields .radios label {
+  padding: 0 0 0 5px;
+}
+div.account-survey form .field.textarea {
+  max-width: 410px;
+  margin: 40px auto 20px;
+}
+div.account-survey form .field.textarea textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  height: 80px;
+}
+div.account-survey form .field .submit {
+  border: 1px solid #3b3b3b;
+  color: #11b9c3;
+  padding: 5px 10px;
+  margin: 20px auto 0;
+  display: block;
+  width: 150px;
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  text-align: center;
+}
+div.account-survey form .field .submit:hover {
+  text-decoration: none;
+}
