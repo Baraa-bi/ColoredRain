@@ -1,8 +1,24 @@
+body {
+  overflow: hidden;
+}
 h1 {
   text-align: center;
   color: white;
 }
+input[type='text']
+{
 
+    background: rgba(255,255,255,0.01);
+    color:#5e967f;
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin-top:15px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  outline: 0;
+
+
+}
 div.account-survey .col-centered {
   float: none;
   margin: 0 auto;
@@ -22,11 +38,12 @@ div.account-survey .errors h5 {
 div.account-survey form {
   position: fixed;
   border-radius: 30px;
-  width:21%;
+  width:22%;
   top:0;
   right:0;
   color: white;
   background: rgba(50, 50, 50,.5);
+
   padding: 20px;
   max-width: 730px;
   margin: 40px ;;
@@ -50,8 +67,8 @@ div.account-survey form .field.slider {
 div.account-survey form .field.slider label {
   width: 100px;
   display: inline;
-  color: #1a3658;
-  
+  color: #5e967f;
+
 }
 @media (min-width: 500px) {
   div.account-survey form .field.slider label {
@@ -72,7 +89,7 @@ div.account-survey form .field.slider .slider-horizontal {
 div.account-survey form .field label {
   font-family: 'Source Sans Pro';
   font-weight: 500;
-  color: #3b3b3b;
+  color: #5e967f;
   font-size: 12px;
   text-transform: uppercase;
   padding-right: 15px;
@@ -80,7 +97,7 @@ div.account-survey form .field label {
 div.account-survey form .field .slider-val {
   font-family: 'Oswald';
   font-weight: bold;
-  color: #1a3658;
+  color: #5e967f;
   font-size: 16px;
   top: 4px;
   position: relative;
@@ -150,9 +167,10 @@ div.account-survey form .field .slider-checkbox input:checked + label:after {
   opacity: 1;
 }
 div.account-survey form .field.radio-fields {
-  margin: 50px auto 0;
+  margin: 20px auto 0;
   max-width: 460px;
   overflow: hidden;
+  display: inline;
 }
 @media (min-width: 670px) {
   div.account-survey form .field.radio-fields {
@@ -160,12 +178,12 @@ div.account-survey form .field.radio-fields {
   }
 }
 div.account-survey form .field.radio-fields p {
-  text-align: center;
+  text-align: left;
 }
 div.account-survey form .field.radio-fields .radios {
-  padding: 0 30px;
+  padding: 10px 10px;
   float: none;
-  display: block;
+  display: inline;
 }
 @media (min-width: 670px) {
   div.account-survey form .field.radio-fields .radios {

@@ -24,23 +24,23 @@
 		<form action="#" id="campus-survey">
       <h1>Tools</h1>
 			<div class="field slider">
-				<label>Slider 1</label>
-				<input id="slider-1"  class="sliders" type="text" data-slider-min="1" data-slider-max="5" data-slider-value="3"/>
-				<span id="slider-1-val" class="slider-val">3</span>
+				<label>Frame Rate</label>
+				<input id="slider-1"  class="sliders" type="text" data-slider-min="20" data-slider-max="200" data-slider-value="100"/>
+				<span id="slider-1-val" class="slider-val">100</span>
 				<span class="slider-checkbox">
 					<input type="checkbox" name="slider-1" id="slider-1-na" value="slider-1-na">
 				</span>
 			</div>
 			<div class="field slider">
-				<label>Slider 2</label>
-				<input id="slider-2"  class="sliders" type="text" data-slider-min="1" data-slider-max="5" data-slider-value="3"/>
-				<span id="slider-2-val" class="slider-val">3</span>
+				<label>Rain No</label>
+				<input id="slider-2"  class="sliders" type="text" data-slider-min="1" data-slider-max="500" data-slider-value="100"/>
+				<span id="slider-2-val" class="slider-val">100</span>
 				<span class="slider-checkbox">
 					<input type="checkbox" name="slider-2" id="slider-2-na" value="slider-2-na">
 				</span>
 			</div>
 			<div class="field slider">
-				<label>Slider 3</label>
+				<label>Drop Size</label>
 				<input id="slider-3"  class="sliders" type="text" data-slider-min="1" data-slider-max="5" data-slider-value="3"/>
 				<span id="slider-3-val" class="slider-val">3</span>
 				<span class="slider-checkbox">
@@ -48,32 +48,49 @@
 				</span>
 			</div>
 			<div class="field slider">
-				<label>Slider 4</label>
-				<input id="slider-4"  class="sliders" type="text" data-slider-min="1" data-slider-max="5" data-slider-value="3"/>
+				<label>Nighty</label>
+				<input id="slider-4"  class="sliders" type="text" data-slider-min="0" data-slider-max="255" data-slider-value="3"/>
 				<span id="slider-4-val" class="slider-val">3</span>
 				<span class="slider-checkbox">
 					<input type="checkbox" name="slider-4" id="slider-4-na" value="slider-4-na">
 				</span>
 			</div>
-			<div class="field slider">
-				<label>Slider 5</label>
-				<input id="slider-5"  class="sliders" type="text" data-slider-min="1" data-slider-max="5" data-slider-value="3"/>
-				<span id="slider-5-val" class="slider-val">3</span>
-				<span class="slider-checkbox">
-					<input type="checkbox" name="slider-5" id="slider-5-na" value="slider-15-na">
+
+			<div class="field radio-fields">
+				<p>Color Bitwise :</p>
+				<span class="radios">
+					<input type="radio" id="na" name="color-type" value="1" checked="checked">
+					<label for="na">XOR</label>
+				</span>
+				<span class="radios">
+					<input type="radio" id="improving" name="color-type" value="2" >
+					<label for="improving">OR</label>
+				</span>
+				<span class="radios">
+					<input type="radio" id="staying-the-same" name="color-type" value="3" >
+					<label for="staying-the-same">AND</label>
 				</span>
 			</div>
+      <input type="text" id="mask" name="mask"  placeholder="Color Mask" maxlength="8"
+      onkeypress='changeMask();return event.charCode >= 48 && event.charCode <= 49'
+        value="01110100">
 
+        <h6>just 8 bits</h6>
 
 		</form>
 	</div>
+
 </div>
+<audio id="audio" src="1.mp3" preload="auto"></audio>
+
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/bootstrap-slider.js'></script>
 
-    <script src="js/index.js"></script>
+    <script src="js/index.js">
+
+    </script>
     <script src="js/app.js"></script>
-    <script src="js/p5.min.js"></script>
+    <script src="js/lib/p5.min.js"></script>
 
 </body>
 </html>
